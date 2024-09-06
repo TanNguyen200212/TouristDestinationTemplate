@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="assets/main.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/1249476.jpg">
+  <title>VN TRAVEL</title> 
+</head>
+
+<body>
+  <!-- ===========================header============================================= -->
+  <header id="header">
+    <nav class="header_navbar">
+      <ul class="header__navbar-list">
+        <li class="header__navbar-item vn-travel">VNTRAVEL</li>
+        <li class="header__navbar-item"> HOME</li>
+        <li class="header__navbar-item"> INTERNATIONAL TRAVEL</li>
+        <li class="header__navbar-item">FOREIGN TRAVEL</li>
+        <li class="header__navbar-item">TRAVEL SERVICES  </li>
+        <li class="header__navbar-item">CONTACT</li>
+      </ul>
+    </nav>
+
+    <nav class="header_navbar">
+      <ul class="header__navbar-list">
+        <li class="header__navbar-item btn-login">LOG IN</li>
+        <li class="header__navbar-item btn-register">REGISTER</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--==================================== Slider============================== -->
+  <div id="slider">
+
+    <img class="slider-img" src="./assets/img/2767728.jpg" alt="">
+    <img class="slider-img" src="./assets/img/1249476.jpg" alt="">
+    <img class="slider-img" src="./assets/img/524181.jpg" alt="">
+    <div class="text-content">
+      <h2 class="text-heading">DISCOVER</h2>
+      <div class="text-description">THE WORLD</div>
+    </div>
+  </div>
+
+  <!--========================== Modal layout================================================ -->
+  <div class="modal-register">
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <!-- REGISTER -->
+
+        <div class="auth-form">
+
+          <div class="auth-form__header">
+            <h3 class="auth-form__heading">REGISTER</h3>
+            <!-- <span class="auth-form_switch-btn auth-form__register">LOG IN</span> -->
+          </div>
+
+          <div class="auth-form_form">
+            <div class="auth-form__group">
+              <input type="text" class="auth-form__input accountRegister" placeholder="Your Account's Name">
+            </div>
+            <div class="auth-form__group"><input type="password" class="auth-form__input passwordRegister"
+                placeholder="Your Password"></div>
+            <div class="auth-form__group password"><input type="password" class="auth-form__input"
+                placeholder="Confirm Password"></div>
+          </div>
+
+          <div class="auth-form__controls">
+
+            <input type='submit' value='REGISTER' onclick="onClickRegister()" ;
+              class="btn btn-login btn-localStorage"></input>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOG IN -->
+  <div class="modal-login">
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body login-body">
+        <div class="auth-form">
+
+          <div class="auth-form__header">
+            <h3 class="auth-form__heading">LOG IN</h3>
+            <!-- <span class="auth-form_switch-btn auth-form__register">REGISTER</span> -->
+          </div>
+
+          <div class="auth-form_form">
+            <div class="auth-form__group">
+              <input type="text" class="auth-form__input" id="accountLogIn" placeholder="Your Account's Name">
+            </div>
+            <div class="auth-form__group"><input type="password" class="auth-form__input" id="passwordLogIn"
+                placeholder="Your Password"></div>
+
+          </div>
+          <div class="auth-form__controls">
+
+            <input type='submit' value='LOG IN' onclick="onClickLogIn();"
+              class="btn btn-login btn-localStorage"></input>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ======================= Search ==================== -->
+  <div id="search">
+    <h2 class="search-heading">Let's search your place!</h2>
+
+    <div class="search-form">
+      <div class="search-from__item full-search destination">
+        <p class="">Destination:</p>
+        <input type="text" class="search-from__item--input" placeholder="Địa điểm..." required="required">
+      </div>
+      <div class="search-from__item half-search check-in">
+        <p class="">Check in:</p>
+        <input type="date" class="search-from__item--input" placeholder="">
+      </div>
+      <div class="search-from__item half-search check-out">
+        <p class="">Check out:</p>
+        <input type="date" class="search-from__item--input" placeholder="">
+      </div>
+      <div class="search-from__item half-search adults">
+        <p class="">Adults:</p>
+        <input class="search-from__item--input" placeholder="Người lớn..."></input>
+      </div>
+      <div class="search-from__item half-search children">
+        <p class="">Children:</p>
+        <input class="search-from__item--input" placeholder="Trẻ em..."></input>
+      </div>
+    </div>
+
+    <div class="search-submit">
+      <button class="search-submit__btn">SEARCH <i class="fas fa-search search-submit__icon"></i></button>
+    </div>
+  </div>
+  
+
+  <br/>
+  <br/>
+<!-- trong nước -->
+
+ <header>
+    <h8>
+    <center> DOMESTIC TOURIST DESTINATION  </center> </h8>
+    </header>
+    <br/>
+  <br/>
+    <div  class="wrapper">
+  <div class ="trong-nuoc">
+    <div class="trong-nuoc__overlay">  
+    </div>
+    <a href =""><img src =" ./assets/img/hochiminh.jpg"  width="372px" height="243px" class="imageChange"/>
+      <div>
+      <div class="imageTitle  l-20">Hồ Chí Minh</div>
+    </a>
+  </div>
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/vungtau.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Vũng Tàu</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/nhatrang.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Nha Trang</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/phuquoc.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Phú Quốc</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/danang.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Đà Nẵng</div>
+  </a>
+</div>
+
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/hoian.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Hội An</div>
+  </a>
+</div>
+
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/quangbinh.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Quảng Bình</div>
+  </a>
+</div>
+
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/hanoi.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Hà Nội</div>
+  </a>
+</div>
+
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/dalat.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Đà Lạt</div>
+  </a>
+</div>
+
+</div>
+</div>
+
+<div class="" style="height:25px"></div>
+
+<!--:)-->
+
+ 
+<div id="main">
+</div>
+  <div id="page">
+</div>
+
+ 
+  <!-- TOUR trong nuoc-->
+  <div id="tour">
+
+    <header>
+      <h8 class="upper">
+        <center> 
+          Domestic sightseeing tickets </center></h8>
+       
+        </header>
+        <br/>
+        <br/>
+    <div class="tour__row">
+
+    <div class="tag__container">
+      <img src="./assets/img/art-in-danang.jpg"   alt="" class="tag__img">
+      <div class="tag__career">
+        <div class="tag__location">HO CHI MINH</div>
+        <div class="tag__title">3D Art in Us Museum Ticket</div>
+        <div class="tag__rating">
+          <div class="star__rating"><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span></div>
+          <div class="rating__description">37 Assessments</div> 
+        </div>
+        <div class="tag__description">
+          Get tickets in 24 hours<br>
+          Tickets available from today
+        </div>
+        <div class="tag__price">470.000 đ</div>
+      </div>
+    </div> 
+
+      <div class="tag__container">
+        <img src="./assets/img/so-thu-zoodoo-da-lat.jpg"    alt="" class="tag__img">
+        <div class="tag__career">
+          <div class="tag__location">DA LAT</div>
+          <div class="tag__title"> ZOODOO DA LAT TICKET </div>
+          <div class="tag__rating">
+            <div class="star__rating"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></div>
+            <div class="rating__description">40 Assessments</div> 
+          </div>
+          <div class="tag__description">
+            Get tickets in 24 hours<br>
+            Tickets available from today
+          </div>
+          <div class="tag__price">500.000 đ</div>
+        </div>
+      </div> 
+
+
+        <div class="tag__container">
+          <img src="./assets/img/skylight-nhatrang.png"   alt="" class="tag__img">
+          <div class="tag__career">
+            <div class="tag__location">NHA TRANG</div>
+            <div class="tag__title">SKYLIGHT NHA TRANG</div>
+            <div class="tag__rating">
+              <div class="star__rating"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></div>
+              <div class="rating__description">85 Assessments</div> 
+            </div>
+            <div class="tag__description">
+              Get tickets in 24 hours<br>
+              Tickets available from today
+            </div>
+            <div class="tag__price">600.000 đ</div>
+          </div>
+        </div> 
+
+
+          <div class="tag__container">
+            <img src="./assets/img/VinWonders-VinpearlSafari.jpg"    alt="" class="tag__img">
+            <div class="tag__career">
+              <div class="tag__location">PHU QUOC</div>
+              <div class="tag__title">VinWonders & Vinpearl Safari</div>
+              <div class="tag__rating">
+                <div class="star__rating"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span></div>
+                <div class="rating__description">79 Assessments</div> 
+              </div>
+              <div class="tag__description">
+                Get tickets in 24 hours<br>
+                Tickets available from today
+              </div>
+              <div class="tag__price">1.200.000 đ</div>
+            </div>
+          </div>
+ 
+  </div>
+</div>
+            
+ 
+
+
+
+
+
+
+     
+<br/>
+<br/>
+<!-- ngoài nước -->
+<header>
+
+  <h8 class="upper">
+  <center> International travel destination </center></h8>
+  </header>
+  <br/>
+  <br/>
+  <div  class="wrapper">
+
+    <div class ="trong-nuoc">
+      <div class="trong-nuoc__overlay">  
+      </div>
+      <a href =""><img src ="./assets/img/bangkok.jpg"  width="372px" height="243px" class="imageChange"/>
+        <div>
+        <div class="imageTitle">BANGKOK</div>
+      </a>
+    </div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src ="./assets/img/chiangmai.jpg "  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">CHIANGMAI</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/kualalumpur.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">KUALA LUMPUR</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/seoul.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">SEOUL</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/singapore.jpeg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">SINGAPORE</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src ="  ./assets/img/taipei.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">TAIPEI</div>
+  </a>
+</div>
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src ="./assets/img/tokyo.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">TOKYO</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src ="./assets/img/usa.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">USA</div>
+  </a>
+</div>
+
+</div>
+
+<div class ="trong-nuoc">
+  <div class="trong-nuoc__overlay">  
+  </div>
+  <a href =""><img src =" ./assets/img/dubai.jpg"  width="372px" height="243px" class="imageChange"/>
+    <div>
+    <div class="imageTitle">Dubai</div>
+  </a>
+</div>
+
+</div>
+</div>
+
+<!-- ---- -->
+ 
+<div id="main1">
+</div>
+  <div id="page1">
+</div>
+
+
+
+
+<div class="" style="height:25px"></div>
+
+
+
+<!-- NHẬN TIN KHUYẾN MÃI -->
+<div id="promotion">
+<div class="promotion__container">
+<div class="row">
+  <div class="promotion__info">
+    <div class="promotion__info--title">Nhận ƯU ĐÃI, TIN KHUYẾN MÃI</div>
+    <div class="promotion__info--description">Tặng ngay MÃ GIẢM GIÁ mua tour online</div>
+  </div>
+
+  <div class="promotion__sign-up">
+    <div class="auth-form__group ">
+      <input type="text" class="auth-form__input promotion__input"  placeholder="Họ tên">
+    </div>
+    <div class="auth-form__group promotion__input"><input type="password" class="auth-form__input" 
+        placeholder="Email"></div>
+    <div class="promotion__btn">
+        <input type='submit' value='ĐĂNG KÝ NGAY' onclick="onClickGetNotify()"
+        class="btn white mt-10  "></input>
+     </div>      
+  </div>
+</div>
+
+</div>
+
+</div>
+<!-- ----------------------------------------------------- -->
+
+<!--COMMITENT  -->
+<div id="commitent">
+<div class="commitent__container">
+  <div class="commitent__row">
+
+    <div class="commitent__box">
+      <img src="./assets/img/best-price.png" class="commitent__box--img"></img>
+      <div class="commitent__box-info">
+        <div class="commitent__heading">GIÁ TỐT - NHIỀU ƯU ĐÃI</div>
+        <div class="commitent__description">Ưu đãi và quà tặng hấp dẫn khi mua tour online</div>
+      </div>
+    </div>
+
+  
+  <div class="commitent__box">
+      <img src="https://www.saigontourist.net/images/pay.png" class="commitent__box--img"></img>
+      <div class="commitent__box-info">
+        <div class="commitent__heading">THANH TOÁN AN TOÀN</div>
+        <div class="commitent__description">Được bảo mật bởi tổ chức quốc tế Global Sign</div>
+      </div>
+  </div>
+
+  
+  <div class="commitent__box">
+      <img src="https://www.saigontourist.net/images/promotion.png" class="commitent__box--img"></img>
+      <div class="commitent__box-info">
+        <div class="commitent__heading">TƯ VẤN MIỄN PHÍ</div>
+        <div class="commitent__description">Hỗ trợ tư vấn online miễn phí</div>
+      </div>
+  </div>
+
+
+  <div class="commitent__box">
+    <img src="https://www.saigontourist.net/images/star.png" class="commitent__box--img"></img>
+    <div class="commitent__box-info">
+      <div class="commitent__heading">THƯƠNG HIỆU UY TÍN</div>
+      <div class="commitent__description">Thương hiệu lữ hành hàng đầu Việt Nam</div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+  <!--Footer-->
+  <div id="footer">
+  
+    <div class="mid">
+      <h3>Liên Kết</h3>
+      <ul>
+            <li><a href="#" >Điều khoản và điều kiện</a></li>
+            <li><a href="#" >Quy định về thanh toán</a></li>
+            <li><a href="#" >Quy định về xác nhận thông tin đặt phòng</a></li>
+            <li><a href="#" >Chính sách về hủy đặt phòng và hoàn trả tiền</a></li>
+            <li><a href="#" >Chính sách bảo mật thông tin</a></li>
+            <li><a href="#" >Quy chế hoạt động</a></li>
+            <li><a href="#" >Quy trình giải quyết tranh chấp, khiếu nại</a></li> 
+      </ul>
+    </div>
+    <div class="right">
+      <h3>Liên hệ</h3>
+      <ul>
+            <li><a href="#" >Khách hàng và đối tác</a></li>
+            <li><a href="#" >Đăng nhập HMS</a></li>
+            <li><a href="#" >Tuyển dụng</a></li>
+            <li><a href="#" >Liên hệ</a></li>
+           
+      </ul>
+      <div class="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=662671215118094&autoLogAppEvents=1" nonce="qcPmUynn"></script>
+      <div class="fb-like" data-href="https://www.facebook.com/GenshinImpact.vi" data-width="50px" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+    </div>
+    <div class="bot">
+       <h4>Mytour là thành viên của VNTravel Group - Một trong những tập đoàn đứng đầu Đông Nam Á về du lịch trực tuyến và các dịch vụ liên quan.</h4>
+    </div>
+
+</div>
+
+
+
+
+  <!-- ============================================== JAVASCRIPT ============================= -->
+  <script>
+    w3.slideshow(".slider-img", 5000);
+    //quản lý cái bật tắt log in register
+    var login = document.querySelector(".btn-login");
+    var register = document.querySelector('.btn-register');
+    var modal_login = document.querySelector(".modal-login");
+    var modal_register = document.querySelector(".modal-register");
+    var modal_body = document.querySelector(".modal__body");
+    var loginbody = document.querySelector('.login-body');
+    function AddModalLogIn() {
+      modal_login.classList.toggle('open');
+    }
+    function RemoveModalLogIn() {
+      modal_login.classList.toggle('open');
+    }
+    login.addEventListener('click', AddModalLogIn);
+    modal_login.addEventListener('click', RemoveModalLogIn);
+
+    function AddModalRegister() {
+      modal_register.classList.toggle('open');
+    }
+    function RemoveModalRegister() {
+      modal_register.classList.toggle('open');
+    }
+    register.addEventListener('click', AddModalRegister);
+    modal_register.addEventListener('click', RemoveModalRegister);
+
+    modal_body.addEventListener('click', function (event) {
+      event.stopPropagation();
+    })
+    loginbody.addEventListener('click', function (e) {
+      e.stopPropagation();
+    })
+    //--------------------------------------------
+    //lưu localStorage
+
+
+
+    var savelocal = document.querySelector('.btn-localStorage');
+
+    function onClickLogIn() {
+      var passwordLogIn = document.getElementById('passwordLogIn').value;
+      var accountLogIn = document.getElementById('accountLogIn').value;
+
+      if (localStorage.getItem(accountLogIn)) {
+        alert("Đăng nhập thành công!");
+      }
+      else if (localStorage.getItem(accountLogIn) == null) {
+        alert("Tài khoản không tồn tại!");
+      }
+
+
+    }
+    function onClickRegister() {
+      var passwordRegister = document.querySelector('.passwordRegister').value;
+      var accountRegister = document.querySelector('.accountRegister').value;
+      localStorage.setItem(accountRegister, passwordRegister);
+      alert("Đăng ký thành công!");
+    }
+    function onClickGetNotify(){
+      alert("Đăng ký thông báo thành công");
+    }
+  </script>
+</body>
+
+</html>

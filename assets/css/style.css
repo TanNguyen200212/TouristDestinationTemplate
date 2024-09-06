@@ -1,0 +1,43 @@
+header >h8{
+    text-align: center;
+    color: gray;
+    font-size: 56px;
+    text-shadow: 3px 4px lightblue;
+    line-height:1.5;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 70px;
+   
+    
+  }
+  
+  .imageChange {
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    border-radius: 30px;
+   
+    }
+    
+    .tag__img {
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -khtml-border-radius: 20px;
+      border-radius: 20px;
+    }
+  
+   
+    h7{
+      font-size: 14px;
+      } 
+
+      h1{
+        margin-left: 40px;;
+      }
+    
+   
+  
